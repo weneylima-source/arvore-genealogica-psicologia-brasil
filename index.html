@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Árvore Genealógica da Psicologia no Brasil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inst">
+    <p class="inst-name">Universidade Católica de Brasília</p>
+    <p class="inst-course">Prática Profissional em Psicologia</p>
+    <p class="inst-author">Autor: Weney Lima de Araújo</p>
+  </div>
+  <h1>A Árvore Genealógica da Psicologia no Brasil</h1>
+  <p>Raízes europeias e norte-americanas (base) irrigando os dois grandes ramos em que a psicologia brasileira se constituiu: um ramo científico-experimental (esquerda) e um ramo clínico-educacional-social (direita).</p>
+  <div class="badge-row">Clique em qualquer nó para ler a descrição completa, ver as fontes ▾ e destacar todo o trajeto (ancestrais e descendentes) daquele ramo</div>
+</header>
+
+<div class="legend" id="legend"></div>
+
+<div class="stage-outer">
+  <div class="stage-frame" id="stageFrame">
+    <div class="stage" id="stage">
+      <svg class="bg" id="bgSvg" width="1600" height="1320"></svg>
+      <svg class="conn" id="connSvg" width="1600" height="1320"></svg>
+
+      <div class="title-plate">
+        <div class="t1">A GENEALOGIA<br>DA PSICOLOGIA<br>NO BRASIL</div>
+        <div class="t2">Uma síntese ilustrada; para a versão completa com todas as datas, instituições e citações numeradas por nó, veja o diagrama analítico e o guia em PDF/Markdown que acompanham este arquivo.</div>
+      </div>
+
+      <div id="nodesLayer"></div>
+      <div id="flagsLayer"></div>
+      <div id="captionsLayer"></div>
+    </div>
+  </div>
+</div>
+<div class="zoom-hint" id="zoomHint">Toque com dois dedos para dar zoom · arraste para navegar</div>
+
+<div class="note">Ilustração estilizada com fotografias/retratos reais de todas as 32 figuras e instituições da árvore. Cores: tons quentes = ramo científico-experimental; tons frios = ramo clínico-educacional-social; dourado tracejado = raízes estrangeiras. Clique em um nó para destacar, em dourado, todo o seu trajeto (ancestrais e descendentes) na árvore.</div>
+
+<div class="sources" id="sources">
+  <h2>Fontes</h2>
+  <p>Bibliografia consultada, priorizando estudos acadêmicos de referência publicados em periódicos indexados (SciELO, PePSIC, Redalyc) e livros organizados por historiadores da psicologia no Brasil:</p>
+  <ol id="sourcesList"></ol>
+</div>
+
+<div class="drawer" id="drawer">
+  <button class="close" id="drawerClose">✕ fechar</button>
+  <h3 id="dName"></h3>
+  <div class="dmeta" id="dMeta"></div>
+  <p id="dBlurb"></p>
+  <div class="refs" id="dRefs"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
